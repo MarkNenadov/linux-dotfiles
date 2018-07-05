@@ -6,3 +6,8 @@
 
 [core]
 editor = vim
+
+[alias]
+u = merge
+m = merge
+c = commit
