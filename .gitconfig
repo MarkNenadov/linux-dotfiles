@@ -11,3 +11,6 @@ editor = vim
 u = merge
 m = merge
 c = commit
+f = fetch
+p = push
+a = add
