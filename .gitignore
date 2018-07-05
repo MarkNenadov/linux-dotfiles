@@ -3,3 +3,5 @@
 !.gitignore
 !.gitconfig
 !.bash_aliases
+!.selected_editor
+!install.sh
