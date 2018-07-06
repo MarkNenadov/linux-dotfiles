@@ -11,6 +11,17 @@ alias sus="sudo -s"
 alias follow="tail -f"
 alias f="find .|grep "
 alias p="ps -ef|grep "
+alias v="vim"
+
+# ownership
+
+alias own="chown $USER:$USER"
+alias a+x="chmod a+x"
+alias a+r="chmod a+r"
+alias a+w="chmod a+w"
+alias a-x="chmod a-x"
+alias a-r="chmod a-r"
+alias a-w="chmod a-w"
 
 # safety
 
@@ -32,6 +43,7 @@ alias pl="perl"
 
 # version control
 
+alias g="git"
 alias git-ls="git ls-tree -r master --name-only"
 
 # installation
@@ -54,4 +66,5 @@ alias cim="vim"
 
 # various
 
+alias rs="rsync -av -e"
 alias calc='python -ic "from __future__ import division; from math import *"'
