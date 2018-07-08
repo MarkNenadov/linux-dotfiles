@@ -106,7 +106,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions
+    . ~/.bash_functions;
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -119,3 +119,22 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# prompt customization -- thanks to Anders Rasmussen for this one
+
+function setprompt {
+  local BLUE="\[\033[0;34m\]"
+  local NO_COLOUR="\[\033[0m\]"
+  local SSH_IP=`echo $SSH_CLIENT | awk '{ print $1 }'`
+  local SSH2_IP=`echo $SSH2_CLIENT | awk '{ print $1 }'`
+  if [ $SSH2_IP ] || [ $SSH_IP ] ; then
+    local SSH_FLAG="@\h"
+  fi
+  PS1="$NO_COLOUR[\$(date +%H:%M)][\u$SSH_FLAG:\w]\\$ $NO_COLOUR"
+  PS2="$BLUE>$NO_COLOUR "
+  PS4='$BLUE+$NO_COLOUR '
+}
+
+setprompt
+
+set bell-style none
