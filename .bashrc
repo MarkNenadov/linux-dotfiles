@@ -135,6 +135,6 @@ function setprompt {
   PS4='$BLUE+$NO_COLOUR '
 }
 
-setprompt
+#setprompt
 
 set bell-style none
