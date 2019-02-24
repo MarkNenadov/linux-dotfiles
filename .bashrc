@@ -135,6 +135,11 @@ function setprompt {
   PS4='$BLUE+$NO_COLOUR '
 }
 
+mkcd () {
+  mkdir "$1"
+  cd "$1"
+}
+
 #setprompt
 
 set bell-style none
