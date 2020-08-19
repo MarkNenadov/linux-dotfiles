@@ -53,6 +53,7 @@ alias apt-list="dpkg-list"
 alias install-tools="apt-get install htop nmap wget links zip unzip unp"
 alias upgrade="apt-get upgrade"
 alias update="apt-get update"
+alias sec-updates-list="apt list --upgradable | grep '\-security'"
 
 # networking
 
