@@ -33,6 +33,11 @@ alias rm="rm -iv"
 # disk space
 alias diskspace="du -S | sort -n -r |more"
 
+# javascript
+
+alias y="yarn"
+alias n="npm"
+
 # compression
 
 alias gz="gzip"
@@ -68,6 +73,9 @@ alias sec-updates-list="apt list --upgradable | grep '\-security'"
 
 # networking
 
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias ports="netstat -tulanp"
 
 # typos
