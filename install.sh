@@ -12,7 +12,7 @@ clone() {
     git clone https://github.com/MarkNenadov/dotfiles.git
     rm -rf .git
 }
-clone();
+clone()
 
 deploying() {
     echo "[linux-dotfiles] deploying..."
