@@ -47,7 +47,15 @@ alias pl="perl"
 # version control
 
 alias g="git"
+alias ga="git add"
+alias gf="git fetch"
+alias gp="git push"
+alias gc="git commit"
+alias clone="git clone"
+alias gm="git mergeh"
+alias gfm="git fetch; git merge;"
 alias git-ls="git ls-tree -r master --name-only"
+
 
 # installation
 
