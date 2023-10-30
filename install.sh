@@ -4,7 +4,7 @@ install_packages() {
     echo "[linux-dotfiles] installing packages..."
     sudo apt install net-tools nmap wget
 }
-install_packages()
+install_packages
 
 clone() {
     echo "[linux-dotfiles] cloning..."
@@ -12,13 +12,13 @@ clone() {
     git clone https://github.com/MarkNenadov/dotfiles.git
     rm -rf .git
 }
-clone()
+clone
 
 deploying() {
     echo "[linux-dotfiles] deploying..."
     mv ./dotfiles/.[!.]* .
 }
-deoloying()
+deploying
 
 cleanup() {
     echo "[linux-dotfiles] cleanup..."
@@ -27,3 +27,4 @@ cleanup() {
     echo "[linux-dotfiles] installed"
     bash
 }
+cleanup
