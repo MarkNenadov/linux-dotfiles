@@ -15,6 +15,11 @@ alias v="vim"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias f1="awk '{print \$1}'"
+alias f2="awk '{print \$2}'"
+alias f3="awk '{print \$3}'"
+alias df="df -h"
+
 
 # ownership
 
